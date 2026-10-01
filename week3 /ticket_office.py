@@ -45,7 +45,7 @@ while True:
         print("Warning: Student status must be either 'yes' or 'no'.")
         continue
 
-    # Discount priority rules and category determination
+    
     if age < 6:
         category = "Free"
         discount_rate = 1.00
@@ -64,16 +64,15 @@ while True:
 
     final_price = base_price * (1 - discount_rate)
 
-    # Sale output
+   
     print(f"{name_input}: {final_price:.2f} TRY ({category})")
 
-    # Update summary statistics
     total_tickets += 1
     total_revenue += final_price
     if final_price == 0.0:
         free_tickets += 1
 
-# Summary report
+
 if total_tickets == 0:
     print("No tickets sold.")
 else:
