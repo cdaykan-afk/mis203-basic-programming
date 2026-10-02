@@ -1,4 +1,3 @@
-
 total_tickets = 0
 total_revenue = 0.0
 free_tickets = 0
@@ -74,12 +73,15 @@ while True:
 
 
 if total_tickets == 0:
+    print("=" * 36)
     print("No tickets sold.")
+    print("="*36)
 else:
     avg_price = total_revenue / total_tickets
+    print("=" * 36)  
     print("\n--- Sales Summary ---")
     print(f"Total Tickets Sold   : {total_tickets}")
     print(f"Total Revenue        : {total_revenue:.2f} TRY")
     print(f"Average Ticket Price : {avg_price:.2f} TRY")
     print(f"Free Tickets Count   : {free_tickets}")
-
+    print("=" * 36)
